@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { withAlert } from "react-alert";
 import API from "../utils/API";
 import Jumbotron from "../components/Jumbotron";
 import SearchForm from "../components/SearchForm";
@@ -62,7 +63,7 @@ class Search extends Component {
     API.saveBook(newSave)
       .then(res => {
         console.log(res.status, res.statusText);
-        this.props.alert.show("Book Saved!", { type: "success" });
+        this.props.alert.show("Book Saved", { type: "success" });
       })
       .catch(err => {
         console.log(err);
@@ -119,4 +120,4 @@ class Search extends Component {
 }
 
 // Exporting Component Utilizing the Alerts.
-export default Search;
+export default withAlert(Search);
