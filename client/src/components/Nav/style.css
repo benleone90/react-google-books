@@ -1,0 +1,9 @@
+.navbar-brand,
+a {
+  color: #fff;
+}
+
+.divider {
+  color: #fff;
+  margin: auto 5px;
+}

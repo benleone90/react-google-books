@@ -1,13 +1,13 @@
 const router = require("express").Router();
-const bookshelfController = require("../../controllers/bookshelfController");
+const bookshelfController = require("../../controllers/booksController");
 
 // Matches with '/api/bookshelf'
 router
   .route("/")
-  .get(bookshelfController.findAll)
-  .post(bookshelfController.create);
+  .get(booksController.findAll)
+  .post(booksController.create);
 
 // Matches with '/api/bookshelf/:id'
-router.route("/:id").delete(bookshelfController.delete);
+router.route("/:id").delete(booksController.delete);
 
 module.exports = router;
