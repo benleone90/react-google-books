@@ -4,7 +4,7 @@
   "private": true,
   "proxy": "http://localhost:3001/",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "react": "^16.6.3",
     "react-alert": "^4.0.4",
     "react-alert-template-basic": "^1.0.0",
